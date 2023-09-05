@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Probability Simulator</h1>
+
+        <!-- Classical Probability -->
+        <section id="classicalProbability">
+            <h2>Classical Probability</h2>
+            <button id="coinFlipButton">Flip Coin</button>
+            <p>Result: <span id="coinResult">-</span></p>
+            <p>Heads Count: <span id="headsCount">0</span></p>
+            <p>Tails Count: <span id="tailsCount">0</span></p>
+        </section>
+
+        <!-- Relative Frequency Approach -->
+        <section id="relativeFrequency">
+            <h2>Relative Frequency Approach</h2>
+            <button id="multiCoinFlipButton">Flip Coin 100 Times</button>
+            <p>Heads Frequency: <span id="headsFrequency">-</span></p>
+            <p>Tails Frequency: <span id="tailsFrequency">-</span></p>
+        </section>
+
+        
+
+<section id="subjectiveProbability">
+    <h2>Subjective Probability</h2>
+    <p>
+        Imagine you're a weather forecaster. Based on the current data and patterns, 
+        you believe there's a chance of rain tomorrow. What's your subjective 
+        probability (in percentage) that it will rain tomorrow?
+    </p>
+    <input type="number" id="userEstimate" min="0" max="100" placeholder="Enter your estimate (0-100)">
+    <button id="submitEstimate">Submit Estimate</button>
+    <p id="feedback">Expert Estimate: 60%</p>
+    <p id="comparison">-</p>
+</section>
+<!-- Subjective Probability -->
+<section id="subjectiveProbability">
+    <h2>Subjective Probability</h2>
+    <p>Estimate the probability of drawing an Ace from a standard deck of cards:</p>
+    <input type="number" id="aceProbability" min="0" max="1" step="0.01" placeholder="Your Estimate (0 to 1)" />
+    <button id="checkAceProbability">Check</button>
+    <p>Actual Probability: <span id="actualAceProbability">-</span></p>
+    <p>Your Estimate: <span id="yourAceProbability">-</span></p>
+</section>
+
+        <section id="subjectiveProbability">
+            <h2>Subjective Probability</h2>
+            
+<section id="subjectiveProbability">
+    <h2>Subjective Probability</h2>
+    <p>
+        Subjective probability is based on personal judgment, belief, or knowledge. 
+        It's not based on any formal calculations but rather on an individual's own experience and assessment.
+    </p>
+    <div class="scenario">
+        <p>
+            Imagine you're a weather forecaster. Based on your experience and available data, 
+            what's the probability that it will rain tomorrow in your city?
+        </p>
+        <label for="rainProbability">Your estimated probability (%): </label>
+        <input type="number" id="rainProbability" min="0" max="100">
+        <button id="submitEstimate">Submit</button>
+        <p id="feedbackMessage"></p>
+    
+<section id="jointProbability">
+    <h2>Joint Probability</h2>
+    <p>
+        Here, you can explore the concept of joint probability by drawing two cards in succession.
+    </p>
+    <button id="drawTwoCardsButton">Draw Two Cards</button>
+    <p>First Card: <span id="firstCard">-</span></p>
+    <p>Second Card: <span id="secondCard">-</span></p>
+    <p>Joint Probability of Drawing the Above Sequence: <span id="jointProbabilityResult">-</span></p>
+</section>
+</div>
+</section>
+
+        </section>
+
+        
+<section id="marginalConditionalProbability">
+    <h2>Marginal & Conditional Probability</h2>
+    <p>
+        Using a deck of cards, you can explore the concepts of marginal and conditional probability.
+    </p>
+    <button id="drawCardButton">Draw a Card</button>
+    <p>Last Drawn Card: <span id="lastCard">-</span></p>
+    <p>Probability of Drawing an Ace: <span id="marginalProbability">1/13 or 7.69%</span></p>
+    <p>Probability of Drawing a King given that an Ace was drawn: <span id="conditionalProbability">-</span></p>
+</section>
+<!-- Marginal & Conditional Probability -->
+        <section id="marginalConditionalProbability">
+            <h2>Marginal & Conditional Probability</h2>
+            <!-- This section will be expanded with a card simulator -->
+        </section>
+
+        
+<section id="aPrioriPosteriorProbability">
+    <h2>A Priori & Posterior Probability</h2>
+    <p>
+        Imagine you're trying to diagnose a rare disease that affects 1% of the population. 
+        You have a test that is 99% accurate. If a person has the disease, the test will 
+        correctly identify it 99% of the time. If a person doesn't have the disease, the 
+        test will correctly show a negative result 99% of the time. However, the test will 
+        show a false positive 1% of the time. If a person takes the test and gets a positive 
+        result, what's the probability they actually have the disease?
+    </p>
+    <label for="priorBelief">Enter your prior belief (probability person has disease, between 0 and 1): </label>
+    <input type="number" id="priorBelief" step="0.01" min="0" max="1" placeholder="e.g., 0.01">
+    <button id="calculatePosterior">Calculate Posterior Probability</button>
+    <p>Posterior Probability (given a positive test result): <span id="posteriorProbability">-</span></p>
+</section>
+<!-- A Priori & Posterior Probability -->
+        <section id="aPrioriPosteriorProbability">
+            <h2>A Priori & Posterior Probability</h2>
+            <!-- This section will be expanded with a Bayesian update simulator -->
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
